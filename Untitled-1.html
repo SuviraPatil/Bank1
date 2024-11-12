@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dudhgaon Urban Nidhi Bank Limited</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+
+.about {
+        padding: 50px 20px;
+        background-color: #f4f4f4;
+        text-align: center;
+    }
+
+    .about h2 {
+        font-size: 32px;
+        color: #003366;
+        margin-bottom: 30px;
+    }
+
+    .about-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .about-text {
+        flex: 1;
+        text-align: left;
+        max-width: 600px;
+    }
+
+    .about-text p {
+        font-size: 18px;
+        color: #333;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .about-text h3 {
+        font-size: 24px;
+        color: #003366;
+        margin-top: 20px;
+    }
+
+    .about-text ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .about-text ul li {
+        font-size: 16px;
+        color: #333;
+        margin: 10px 0;
+    }
+
+    .about-text ul li strong {
+        font-weight: bold;
+        color: #ff6600;
+    }
+
+    .about-image img {
+        max-width: 80%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+      .services {
+        padding: 50px 20px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin-bottom: 40px;
+    }
+
+    .services h2 {
+        font-size: 32px;
+        color: #003366;
+        margin-bottom: 30px;
+    }
+
+    .service-cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .service-card {
+        background-color: #f9f9f9;
+        padding: 20px;
+        width: 30%;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .service-icon {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .service-card h4 {
+        color: #003366;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .service-card ul {
+        list-style-type: none;
+        padding-left: 0;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .service-card ul li {
+        margin: 10px 0;
+    }
+
+    .service-card ul li strong {
+        font-weight: bold;
+        color: #ff6600;
+    }
+
+    .services h3 {
+        font-size: 26px;
+        margin-top: 40px;
+        color: #003366;
+    }
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+        header img {
+            width: 100px;
+            margin-top: 10px;
+        }
+        nav {
+            background-color: #ff6600;
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 16px 24px;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            font-weight: 600;
+        }
+        nav a:hover {
+            background-color: #e65c00;
+            transition: background-color 0.3s ease;
+        }
+        section {
+            padding: 50px 20px;
+        }
+        .services, .loan-facilities, .staff, .contact, .characteristics, .testimonials, .about-us, .commitment, .faq {
+            background-color: white;
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .services:hover, .loan-facilities:hover, .staff:hover, .contact:hover, .characteristics:hover, .testimonials:hover, .about-us:hover, .faq:hover {
+            transform: scale(1.03);
+        }
+        .services h2, .loan-facilities h2, .staff h2, .contact h2, .characteristics h2, .testimonials h2, .about-us h2, .faq h2 {
+            color: #003366;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .services ul, .loan-facilities ul, .faq ul {
+            list-style-type: none;
+            padding-left: 0;
+            font-size: 18px;
+        }
+        .services li, .loan-facilities li, .faq li {
+            padding: 12px;
+            border-bottom: 1px solid #f0f0f0;
+            color: #333;
+            font-weight: 500;
+        }
+        .services li:last-child, .loan-facilities li:last-child, .faq li:last-child {
+            border-bottom: none;
+        }
+        .services li:hover, .loan-facilities li:hover, .faq li:hover {
+            background-color: #ffebcc;
+            cursor: pointer;
+        }
+        .staff .member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+        .staff img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-right: 20px;
+            border: 4px solid #ff6600;
+        }
+        .staff h3 {
+            font-size: 24px;
+            color: #003366;
+        }
+        .staff p {
+            color: #777;
+        }
+        .bank-image {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        .commitment {
+            background-color: #ffec99;
+            padding: 40px;
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            color: #003366;
+            margin-top: 40px;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+        }
+        .characteristics ul, .testimonials ul {
+            list-style-type: none;
+            padding-left: 0;
+            font-size: 18px;
+        }
+        .characteristics li, .testimonials li {
+            padding: 12px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .characteristics li:last-child, .testimonials li:last-child {
+            border-bottom: none;
+        }
+        .characteristics li:hover, .testimonials li:hover {
+            background-color: #ffebcc;
+            cursor: pointer;
+        }
+        .faq ul {
+            list-style-type: none;
+            padding-left: 0;
+            font-size: 18px;
+        }
+        .faq li {
+            padding: 12px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .faq li:last-child {
+            border-bottom: none;
+        }
+        .faq li:hover {
+            background-color: #ffebcc;
+            cursor: pointer;
+        }
+        .testimonials p, .faq p {
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Dudhgaon Urban Nidhi Bank Limited</h1>
+        <p>Committed to Your Financial Growth</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Our Services</a>
+        <a href="#">Loan Facilities</a>
+        <a href="#">Contact</a>
+        <a href="#">About Us</a>
+        <a href="#">Testimonials</a>
+        <a href="#">FAQ</a>
+    </nav>
+
+    <section class="services">
+      <h2>Our Services</h2>
+      <img src="https://media.gettyimages.com/id/538784256/photo/bank-receptionist-helping-customers.jpg?s=612x612&w=0&k=20&c=KKhnFQdFydfMaZM3G0fYbUM3SFiHHyTSnADXbsDyJ9U=" alt="Bank Services" class="bank-image"> <!-- Replace with an image representing services -->
+      <h3><strong>Interest and Loans</strong></h3>
+  
+      <div class="service-cards">
+          <div class="service-card">
+              <img src="https://imgs.search.brave.com/vWG1RNMqpiNu0Q24a6G4soQl4j2KNUhvBXPnILTRRk4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9m/cm9udC12aWV3LWFy/cmFuZ2VtZW50LXBp/Z2d5LWJhbmstd2l0/aC1iYW5rbm90ZXNf/MjMtMjE0ODc5Mzc0/NC5qcGc_c2VtdD1h/aXNfaHlicmlk" alt="Pigmy Deposit Scheme" class="service-icon"> <!-- Replace with an icon image -->
+              <h4>Pigmy Deposit Scheme</h4>
+              <ul>
+                  <li>Savings Scheme: <strong>6%</strong></li>
+                  <li>Recurring Scheme: <strong>8%</strong></li>
+                  <li>Fixed Deposit (46 Days – 181 Days): <strong>7%</strong></li>
+                  <li>Fixed Deposit (181 Days – 1 Year): <strong>9%</strong></li>
+                  <li>Fixed Deposit (1 Year – 3 Years): <strong>11%</strong></li>
+                  <li>Fixed Deposit (More than 3 Years): <strong>11.5%</strong></li>
+                  <li>Fixed Deposit (6 Years 6 Months): <strong>Double the amount</strong></li>
+              </ul>
+          </div>
+  
+          <div class="service-card">
+              <img src="https://cdn.pixabay.com/photo/2015/08/29/20/21/safe-913452_960_720.jpg" alt="Lakhpati Thev Yojana" class="service-icon"> <!-- Replace with an icon image -->
+              <h4>Lakhpati Thev Yojana</h4>
+              <ul>
+                  <li>Deposit ₹1000 per month, and get ₹1,00,000 after 70 months</li>
+              </ul>
+          </div>
+  
+          <div class="service-card">
+              <img src="https://imgs.search.brave.com/vSfDvfoNP1-tiCQtnM3ssS7kcyDFSMCxX8ZHkqcpbsU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzI4LzY2LzYy/LzM2MF9GXzMyODY2/NjI4M19TMjBLekRn/cEsxbnkyT0Z0ZjBs/cGU4R1pXRFRySHgy/Wi5qcGc" alt="Senior Citizen & Army Benefits" class="service-icon"> <!-- Replace with an icon image -->
+              <h4>Senior Citizen, Army, and Ex-Army</h4>
+              <ul>
+                  <li>1% Extra interest rate</li>
+              </ul>
+          </div>
+      </div>
+  
+      <h3><strong>Loan Facilities</strong></h3>
+  
+      <div class="service-cards">
+          <div class="service-card">
+              <img src="https://imgs.search.brave.com/7wGSF1-h2Q7TvwQk6wvtAv3DyNNeADJHJz8mh-mQtZQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA4LzgyLzU5LzQ0/LzM2MF9GXzg4MjU5/NDQxMF9GZXdNVHdj/REZ1d2lxWFNoaTdz/VDBGTjFjRnJkdEsy/Yi5qcGc" alt="Loan Facility" class="service-icon"> <!-- Replace with an icon image -->
+              <h4>Loan Facility</h4>
+              <ul>
+                  <li>कर्ज सुविधा: स्थावर मालमत्ता तारण कर्ज</li>
+                  <li>प्लॉट तारण, घर तारण, सोने तारण</li>
+                  <li>मुदत ठेव तारण, एल. आय. सी. तारण</li>
+                  <li>व्यावसायिक कर्ज, वाहन तारण कर्ज</li>
+                  <li>बचत गट कर्ज</li>
+              </ul>
+          </div>
+      </div>
+  </section>
+  <section class="about">
+    <h2>About Dudhgaon Urban Nidhi Bank Limited</h2>
+    <div class="about-content">
+        <div class="about-text">
+            <p>Welcome to <strong>Dudhgaon Urban Nidhi Bank Limited</strong>, a trusted name in banking services committed to serving the financial needs of the community. Established with the goal of providing affordable, reliable, and convenient banking services to our customers, we focus on personalized banking experiences that meet the unique needs of every individual and business.</p>
+            
+            <h3>Our Mission</h3>
+            <p>Our mission is to empower our customers through excellent financial solutions, ensuring their growth and security. We aim to provide easy access to banking services while maintaining the highest level of trust, safety, and reliability.</p>
+            
+            <h3>Our Vision</h3>
+            <p>Our vision is to become the leading bank in the region, known for our innovative solutions, personalized services, and a deep commitment to fostering long-term relationships with our customers.</p>
+            
+            <h3>Our Values</h3>
+            <ul>
+                <li><strong>Integrity:</strong> We uphold the highest standards of integrity in all our dealings, ensuring transparency and honesty.</li>
+                <li><strong>Customer-centric:</strong> Our customers are at the heart of everything we do, and we strive to meet their financial needs with utmost care and attention.</li>
+                <li><strong>Innovation:</strong> We continuously seek innovative solutions to enhance the banking experience and stay ahead of the technological curve.</li>
+                <li><strong>Security:</strong> We ensure that our customers' financial data is always protected and secure through state-of-the-art technologies and practices.</li>
+                <li><strong>Community:</strong> We believe in giving back to the community and fostering social responsibility through various initiatives and programs.</li>
+            </ul>
+        </div>
+        <div class="about-image">
+            <img src="https://stock.adobe.com/search?k=old+bank+building" alt="Bank Building Image"> <!-- Replace with actual bank building image -->
+        </div>
+    </div>
+</section>
+
+    <section class="loan-facilities">
+        <h2>Loan Facilities</h2>
+        <img src="https://imgs.search.brave.com/HeD-48MBpaohpDDnxU321uIdl-iuflcjQkTHadmY7w0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZy/ZWVwaWsuY29tLzI1/Ni8xNTY4Mi8xNTY4/MjQ2Mi5wbmc_c2Vt/dD1haXNfaHlicmlk" alt="Loan Services" class="bank-image"> <!-- Replace with an image representing loan services -->
+        <p><strong>कर्ज सुविधा:</strong> स्थावर मालमत्ता (शेती-गुंठेवारीसह) तारण कर्ज, प्लॉट तारण, घर तारण, सोने तारण, मुदत ठेव तारण, एल. आय. सी. तारण, व्यावसायिक कर्ज, वाहन तारण कर्ज, बचत गट कर्ज</p>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <ul>
+            <li>
+                <p><strong>Ajay Awati</strong>: "This bank has changed my financial journey. The loan processing is smooth and efficient. Highly recommended!"</p>
+            </li>
+            <li>
+                <p><strong>Neha Chougule</strong>: "I have been a part of Dudhgaon Urban Nidhi Bank for years. The customer service is excellent, and the interest rates are the best!"</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="about-us">
+        <h2>About Us</h2>
+        <img src="https://imgs.search.brave.com/iNWVjHsE-8WRKzRJYx0YWHVwpxDep3vWuHpsLgy6x1Q/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNjQ0/MTkxNzM4L3Bob3Rv/L2Jhbmstc2lnbi5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/ZEswU2FBLUJUZ3Bi/aS1NdDNBNWpUcW1F/RE03bGhxUzBhU3Jz/dG9uTzZROD0" alt="Bank Building" class="bank-image"> <!-- Replace with an image of the bank building -->
+        <p>We are a reliable bank that has been serving the community for many years. Our core mission is to help individuals and businesses grow financially with trust, security, and transparency. We offer a variety of financial services, from savings to loans, to help our customers achieve their financial goals.</p>
+    </section>
+
+    <section class="staff">
+      <h2>Our Team</h2>
+      <div class="member">
+          <img src="D:\New folder\kaka.jpeg" alt="kaka.jpeg"> <!-- Replace with actual staff image -->
+          <div>
+              <h3>जिनेंद्र आण्णा पाटील</h3>
+              <p>संस्थापक चेअरमन</p>
+          </div>
+      </div>
+      <div class="member">
+        <img src="D:\New folder\kaka3.jpeg" alt="kaka3.jpeg">
+        <!-- Replace with actual staff image -->
+          <div>
+              <h3>डॉ. अभिनंदन आण्णासो आडमुठे</h3>
+              <p>चेअरमन</p>
+          </div>
+      </div>
+      <div class="member">
+          <img src="D:\New folder\kaka2.jpeg" alt="kaka2.jpeg"> <!-- Replace with actual staff image -->
+          <div>
+              <h3>रविंद्र मदन गडगे</h3>
+              <p>व्हा. चेअरमन</p>
+          </div>
+      </div>
+      <div class="member">
+        <img src="D:\New folder\kaki.png" alt="kaki.png"> <!-- Replace with actual staff image -->
+        <div>
+            <h3>प्रवीणा जिनेंद्र पाटील</h3>
+            <p>व्हा. चेअरमन</p>
+        </div>
+    </div>
+      <!-- Add more staff members as needed -->
+  </section>
+
+    <section class="characteristics">
+        <h2>Our Characteristics</h2>
+        <ul>
+            <li>कॉम्प्यदुराज्ड कोअर बँकिंग</li>
+            <li>अत्याधुनिक व तत्पर सेवा</li>
+            <li>कमीत कमी कागदपत्रांसह सुलभ कर्ज वितरण</li>
+            <li>सीसीटीव्ही व आलार्म सिस्टीम ने सुसज्ज व सुरक्षित कार्यालय</li>
+            <li>एस एम एस अलर्ट सुविधा</li>
+            <li>विश्वासार्ह गुंतवणुकीची व व्यवसायाची हमी</li>
+            <li>पिग्मी भरण्यासाठी यू.पी.आय. बँकिंगची सुविधा</li>
+        </ul>
+    </section>
+
+    <section class="faq">
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        <ul>
+            <li>
+                <strong>Q:</strong> What are the interest rates for Fixed Deposits?
+                <p><strong>A:</strong> The interest rates vary based on the tenure of the deposit. They range from 7% to 11.5%.</p>
+            </li>
+            <li>
+                <strong>Q:</strong> How can I apply for a loan?
+                <p><strong>A:</strong> You can apply for a loan by visiting our bank or filling out the online form available on our website.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="commitment">
+        <p>We are committed to providing the most reliable banking services with utmost trust and security. Your financial growth is our priority.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dudhgaon Urban Nidhi Bank Limited. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
